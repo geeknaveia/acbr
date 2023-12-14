@@ -1,5 +1,5 @@
 {
-  "name": "root",
+  "name": "@geeknaveia/acbr",
   "private": true,
   "workspaces": [
     "packages/*"
