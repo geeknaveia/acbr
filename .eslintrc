@@ -1,0 +1,24 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier"
+  ],
+  "plugins": ["@typescript-eslint"],
+  "rules": {
+    "@typescript-eslint/explicit-module-boundary-types": "off"
+  },
+  "overrides": [
+    {
+      "files": ["packages/*/src/**/*.{ts,tsx}"],
+      "parserOptions": {
+        "project": ["./packages/*/tsconfig.json"]
+      }
+    }
+  ],
+  "env": {
+    "es6": true,
+    "node": true
+  }
+}
